@@ -8,3 +8,13 @@ createRoot(document.getElementById('root')).render(
     <App />
   </React.StrictMode>
 );
+
+
+// Polyfill for CustomEvent in Node.js
+if (typeof global.CustomEvent !== "function") {
+  global.CustomEvent = class CustomEvent extends Event {
+    constructor(event, params) {
+      super(event, params);
+    }
+  };
+}
