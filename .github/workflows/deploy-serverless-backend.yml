@@ -55,3 +55,4 @@ jobs:
               OpenAiModel="${OPENAI_MODEL:-gpt-4.1-mini}" \
               AiMode="${AI_MODE:-openai}" \
               CorsOrigin="${CORS_ORIGIN:-*}"
+
